@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <!-- link to main CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- syntax highlighting with prism.js (dark theme) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- functions concept tutorial header -->
+    <header>
+        <!-- link to homepage -->
+        <nav>
+            <a href="index.html">HOME</a>
+        </nav>
+        <h3>JavaScript Tutorial: Functions</h3>
+        <!-- list subcategories -->
+        <ul class="subcategories">
+            <li><a href="#built-in">Built-in</a></li>
+            <li><a href="#user-defined">User-defined</a></li>
+        </ul>
+        <hr />
+    </header>
+
+    <main>
+        <section id="built-in">
+            <!-- built-in functions section -->
+            <h2>Built-in Functions</h2>
+            <!-- tutorial concept subcategory introduction -->
+            <p>JavaScript provides many built-in functions for various purposes.</p>
+
+            <!-- tell prism.js which language syntax to use for highlighting -->
+            <pre><code class="language-javascript">console.log(Math.pow(2, 3));  // 8
+console.log("Hello".toUpperCase());  // "HELLO"</code></pre>
+
+            <!-- get user input for built-in functions -->
+            <p>Try it yourself:</p>
+            <textarea id="builtinFunctionCode" rows="10" cols="50">// Write your code here</textarea>
+            <br />
+
+            <!-- call JavaScript function to check user code input for built-in functions -->
+            <button onclick="runCode()">Run Code</button>
+
+            <!-- notify user of successful or unsuccessful code execution for built-in functions -->
+            <p>Output:</p>
+            <pre id="output"> </pre>
+
+            <hr />
+        </section>
+
+        <section id="user-defined">
+            <!-- user-defined functions section -->
+            <h2>User-defined Functions</h2>
+            <!-- tutorial concept subcategory introduction -->
+            <p>Functions are reusable blocks of code that perform a specific task.</p>
+
+            <!-- tell prism.js which language syntax to use for highlighting -->
+            <pre><code class="language-javascript">function greet(name) {
+    return 'Hello, ' + name;
+}
+
+console.log(greet('World'));  // "Hello, World"</code></pre>
+
+            <!-- get user input for user-defined functions -->
+            <p>Try it yourself:</p>
+            <textarea id="userCode" rows="10" cols="50">// Write your code here</textarea>
+            <br />
+
+            <!-- call JavaScript function to check user code input for user-defined functions -->
+            <button onclick="runCode()">Run Code</button>
+
+            <!-- notify user of successful or unsuccessful code execution for user-defined functions -->
+            <p>Output:</p>
+            <pre id="output"> </pre>
+        </section>
+    </main>
+
+    <!-- import project's main JavaScript file -->
+    <script src="scripts.js"></script>
+
+    <!-- prism.js core library necessary for the basic functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <!-- language components necessary for defining the syntax highlighting rules for JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-javascript.min.js"></script>
+</body>
+
+</html>

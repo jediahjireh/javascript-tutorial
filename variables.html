@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+    <!-- link to main CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- syntax highlighting with prism.js (dark theme) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- variables concept tutorial header -->
+    <header>
+        <!-- link to homepage -->
+        <nav>
+            <a href="index.html">HOME</a>
+        </nav>
+        <h3>JavaScript Tutorial: Variables</h3>
+        <hr />
+    </header>
+
+    <main>
+        <!-- tutorial concept introduction -->
+        <p>Variables are used to store data values.</p>
+
+        <!-- tell prism.js which language syntax to use for highlighting -->
+        <pre><code class="language-javascript">// 'let' means the variable can be reassigned
+let greeting = "Hello";
+
+// 'const' means the variable cannot be reassigned
+const question = "How are you?";</code></pre>
+
+        <!-- get user input -->
+        <p>Try it yourself:</p>
+        <textarea id="userCode" rows="10" cols="50">// Write your code here</textarea>
+        <br />
+        
+        <!-- call JavaScript function to check user code input -->
+        <button onclick="runCode()">Run Code</button>
+
+        <!-- notify user of successful or unsuccessful code execution -->
+        <p>Output:</p>
+        <pre id="output"> </pre>
+    </main>
+
+    <!-- import project's main JavaScript file -->
+    <script src="scripts.js"></script>
+
+    <!-- prism.js core library necessary for the basic functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+    <!-- language components necessary for defining the syntax highlighting rules for JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-javascript.min.js"></script>
+</body>
+
+</html>

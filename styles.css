@@ -1,0 +1,60 @@
+/* formatting and styling for JavaScript Tutorial website */
+
+/* format and style webpage */
+body {
+    margin: 20px;
+    padding: 20px;
+    font-family: fantasy;
+    background-color: #1f1f1f;
+    color: #cccccc;
+}
+
+/* centralise header */
+header {
+    text-align: center;
+}
+
+/* style links */
+a {
+    color: #cf9178;
+    text-decoration: none;
+}
+
+/* underline link when hovered over */
+a:hover {
+    text-decoration: underline;
+}
+
+/* style preformatted text and input boxes */
+pre,
+textarea {
+    background-color: #1f1f1f;
+    padding: 10px;
+    border: 1px solid #569dd6;
+    color: #cccccc;
+}
+
+/* style subcategory concept headings on their respective webpages */
+h2 {
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    /* centralise subheadings */
+    text-align: center;
+}
+
+/* style computer code */
+code {
+    color: #cccccc;
+}
+
+/* format subcategories listed in header */
+.subcategories {
+    text-align: left;
+}
+
+/* style and format footer */
+footer {
+    text-align: center;
+    font-size: smaller;
+}
